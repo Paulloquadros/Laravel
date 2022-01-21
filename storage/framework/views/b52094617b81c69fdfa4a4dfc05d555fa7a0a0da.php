@@ -1,92 +1,133 @@
 <!DOCTYPE html>
 <html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
-    <head>
-        <meta charset="utf-8">
-        <meta name="LoginPage" content="width=device-width, initial-scale=1">
 
-        <title> LOGIN </title>
+<head>
+    <meta charset="utf-8">
+    <meta name="LoginPage" content="width=device-width, initial-scale=1">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <title> LOGIN </title>
 
-        <head>
-            <style>
-                .a1 {
-                    color: blueviolet;
-                    background-color: red;
-                    text-align: center;
-                    text-shadow: 2px 2px black;
-                    
-                }
-                .log {
-                    background-color: gray;
-                    text-align: center;
-                }
-                .foot1 {
-                    margin-top: 16%;
-                    margin-left: 1%;
-                }
-                .container {
-                    text-align: center;
-                }
-            </style>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-        <h2 class="a1"> 
-            FACA LOGIN PARA CONTINUAR
-            </h2>
 
-        </head>
+    <style>
+        .a1 {
+            color: blueviolet;
+            text-align: center;
+            text-shadow: 2px 2px black;
+            font-size-adjust: inherit;
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-        <body>
 
-        <h1 class="log">PAGINA DE LOGIN<h1>
+        }
+
+        .log1 {
+            color: black;
+            text-align: center;
+            opacity: 100%;
+        }
+
+        .log {
+            background-color: lightcyan;
+            opacity: 50%;
+            margin-left: 10%;
+            margin-right: 10%;
+            border: groove 2px black;
+            border-radius: 50px;
+        }
+
+
+        .container {
+            text-align: center;
+            background: url("https://wallpaperaccess.com/full/177913.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 60%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 20%;
+            margin-right: 20%;
+            border: groove 2px lightgreen;
+            border-radius: 50px;
+        }
+
+        .pwd {
+            text-align: center;
+            font-size: 50%;
+        }
+
+        .remember {
+            font-size: 50%;
+        }
+
+        .bkbtn {
+            background-color: green;
+            opacity: 60%;
+            border: groove 2px white;
+            border-radius: 25px;
+            color: white;
+            margin-right: 18.5%;
+            display: inline-block;
+        }
+
+        .body1 {
+            background: url("https://wallpaperaccess.com/full/177913.jpg");
+            // background-position: center;
+            background-size: cover;
+        }
+        .sigin {
+            background-color: rgb(0, 191, 255);
+            opacity: 80%;
+            border-radius: 25px;
+        }
+    </style>
+
+    <h2 class="a1">
+        PAGINA DE LOGIN
+    </h2>
+
+</head>
+
+
+
+<body class="body1">
+
+
+
+
+    <br>
+    <div class="container">
+
+        <h1 class="log"><a class="log1">FACA LOGIN PARA CONTINUAR</a>
+            <h1>
+
+                <input type="text" placeholder="Entre com o Usuario" name="name" required>
                 <br>
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+                <input type="password" placeholder="Entre com a Senha" name="pwd" required>
                 <br>
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label class="remember">
+                    <input type="checkbox" name="remember"> Lembrar-se de Mim
+                </label>
+
                 <br>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+                <button type="submit">Logar-se</button>
+                <button type="button" class="cancelbtn">Cancelar</button>
                 <br>
-    <button type="submit">Login</button>
-    <button type="button" class="cancelbtn">Cancel</button>
-  </div>
+                <span class="pwd">Esqueceu a <a href="#">Senha?</a></span>
+                <br>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-
-        </body>
-            <footer class="foot1">
-            
-            
-<?php
-echo 'this is a simple string';
-
-echo 'You can also have embedded newlines in
-strings this way as it is
-okay to do';
-
-// Outputs: Arnold once said: "I'll be back"
-echo 'Arnold once said: "I\'ll be back"';
-
-// Outputs: You deleted C:\*.*?
-echo 'You deleted C:\\*.*?';
-
-// Outputs: You deleted C:\*.*?
-echo 'You deleted C:\*.*?';
-
-// Outputs: This will not expand: \n a newline
-echo 'This will not expand: \n a newline';
-
-// Outputs: Variables do not $expand $either
-echo 'Variables do not $expand $either';
-?>
+                <button class="bkbtn" onclick="window.history.go(-1); return false;"><img
+                        src='https://d29fhpw069ctt2.cloudfront.net/icon/image/37948/preview.svg' width="50"
+                        height="25"></button>
+                <button type="signin" class="sigin">Criar conta</button>
 
 
-    <a href="/"><img src="https://d29fhpw069ctt2.cloudfront.net/icon/image/37948/preview.svg" width="50" height="25">RETORNAR</a>
-            </footer><?php /**PATH /home/paullo/TESTELARAVEL/resources/views/login.blade.php ENDPATH**/ ?>
+    </div>
+
+
+
+</body>
+<?php /**PATH /home/paullo/TESTELARAVEL/resources/views/login.blade.php ENDPATH**/ ?>

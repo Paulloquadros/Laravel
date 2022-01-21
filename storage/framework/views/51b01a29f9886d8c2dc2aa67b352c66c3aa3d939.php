@@ -22,12 +22,12 @@
                 background-color: red;
                 text-align: center;
                 border-padding: 10%;
-                
+
             }
             .btn2 {
                 background-color: blue;
                 text-align: center;
-                
+
             }
         </style>
     </head>
@@ -38,11 +38,11 @@
             <a href="/login">LOGIN</a>
 
         </div>
-        
+
         <div class="btn2">
 
             <a href="/db">ACESSAR PAGINA DB</a>
-            
+
         </div>
 
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
@@ -79,12 +79,12 @@
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Morbi ut ex lacinia, gravida lorem a, vestibulum elit. 
-                                Ut sit amet nisi at lectus egestas sollicitudin ut sit amet felis. Donec lobortis eu sem sed porta. 
-                                Nunc nunc purus, semper vitae hendrerit eu, lobortis non ipsum. Donec iaculis tempor congue. 
-                                Sed lobortis ullamcorper dui, id sodales lectus auctor ut. Ut ac venenatis eros. Donec sollicitudin, elit ac lobortis blandit, augue mauris pretium lectus, at imperdiet augue libero vel ipsum. In vitae eros aliquam, gravida urna at, venenatis purus. Sed mauris orci, dictum et tristique vitae, scelerisque ornare augue. Maecenas scelerisque enim congue purus sagittis vulputate. Vivamus rutrum ipsum nibh, vitae egestas lectus dignissim eget. Integer luctus blandit metus sed ullamcorper. 
-                                Fusce et ex eget eros molestie commodo eu nec odio. Aenean iaculis augue non sapien fringilla tempor. 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Morbi ut ex lacinia, gravida lorem a, vestibulum elit.
+                                Ut sit amet nisi at lectus egestas sollicitudin ut sit amet felis. Donec lobortis eu sem sed porta.
+                                Nunc nunc purus, semper vitae hendrerit eu, lobortis non ipsum. Donec iaculis tempor congue.
+                                Sed lobortis ullamcorper dui, id sodales lectus auctor ut. Ut ac venenatis eros. Donec sollicitudin, elit ac lobortis blandit, augue mauris pretium lectus, at imperdiet augue libero vel ipsum. In vitae eros aliquam, gravida urna at, venenatis purus. Sed mauris orci, dictum et tristique vitae, scelerisque ornare augue. Maecenas scelerisque enim congue purus sagittis vulputate. Vivamus rutrum ipsum nibh, vitae egestas lectus dignissim eget. Integer luctus blandit metus sed ullamcorper.
+                                Fusce et ex eget eros molestie commodo eu nec odio. Aenean iaculis augue non sapien fringilla tempor.
                                 </div>
                             </div>
                         </div>
@@ -95,9 +95,10 @@
                                 <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Say`s Hello World:</a></div>
                             </div>
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    HELLO WORLD!
+                            <div>
+                                <div>
+                                    <a href="/login">login</a>
+                                    <a href="/db">DB</a>
                                 </div>
                             </div>
                         </div>
