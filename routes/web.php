@@ -24,3 +24,7 @@ Route::get('/login', function () {
 Route::get('/db', function () {
     return view('db');
 });
+
+Route::get('/start', function () {
+    return view('start');
+});
